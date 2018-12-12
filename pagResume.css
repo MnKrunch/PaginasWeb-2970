@@ -1,0 +1,25 @@
+html, body{
+	font-family: Arial, sans-serif;
+}
+
+header{
+	background-color: #00004C;
+	padding: 40px;
+}
+
+h1{
+	font-size: 75px
+	color:green;
+	text-decoration: underline;
+}
+
+header img{
+	border-radius: 150px
+	width:300px;
+	border: 10px solid #CC0000;
+}
+
+.content{
+	max-width: 900px
+	margin: 0 auto;
+}
