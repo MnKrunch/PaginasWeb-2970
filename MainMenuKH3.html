@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Main Menu</title>
-<link rel="stylesheet" type="text/css" href="css/MainMenu.css">
+	<title>Main Menu</title>
+	<link rel="stylesheet" type="text/css" href="css/MainMenu.css">
 </head>
 <body>
 
-<div id="nav-wrap">
-	<div id="nav-border-top">
-		<div id="nav-border-botton">
-			<div class="container">
-				<table>
-					<tbody>
-						<tr>
-							<td id="logo">
-								<span class="pag-logo">
-									<a href="/"><img style="width: 600px" src="img/keyblade.png"></a>
-								</span>
-							</td>
-							<td id="nav">
-								<ul>
-  <li><a class="active" href="MainMenuKH3.html">Home</a></li>
-  <li><a href="pagKH3.html">All Main Characters</a></li>
-  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Characters</a>
-  	<div class="dropdown-content">
-  		<a href="pagSora.html">Sora</a>
-  		<a href="pagRiku.html">Riku</a>
-  		<a href="pagKairi.html">Kairi</a>
-  	</li>
-  <li><a href="#about">About</a></li>
-</ul>
-						</tr>
-					</tbody>
+	<div id="nav-wrap">
+		<div id="nav-border-top">
+			<div id="nav-border-botton">
+				<div class="container">
+					<table>
+						<tbody>
+							<tr>
+								<td id="logo">
+									<span class="pag-logo">
+										<a href="/"><img style="width: 550px" src="img/keyblade.png"></a>
+									</span>
+								</td>
+								<td id="nav">
+									<ul>
+										<li><a class="active" href="MainMenuKH3.html">Home</a></li>
+										<li><a href="pagKH3.html">All Main Characters</a></li>
+										<li><a href="juegosKH.html">All K.H. Games</a></li>
+										<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Characters</a>
+											<div class="dropdown-content">
+												<a >Sora</a>
+												<a href="pagRiku.html">Riku</a>
+												<a href="pagKairi.html">Kairi</a>
+											</li>
+										</div>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-			</li>
-		</ul>
-	</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
+			</div>
+		</div>
+	</div>
 
-<p>COUNTDOWN FOR RELEASE DATE:</p>
+	<p>COUNTDOWN FOR RELEASE DATE:</p>
 
-<p id="demo"></p>
+	<p id="demo"></p>
 
-<script>
+	<script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 29, 2019 00:00:00").getTime();
 
@@ -57,27 +53,31 @@ var x = setInterval(function() {
 
   // Get todays date and time
   var now = new Date().getTime();
-    
+
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
-    
+
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
+
   // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-    
+
   // If the count down is over, write some text 
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+  	clearInterval(x);
+  	document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
-
+<footer>
+	<ul>
+		<li>Made by <a href="https://github.com/MnKrunch" target="_blank" title="Visit My Website">MnKrunch</a>Copyright belongs to original Creators</li>
+	</ul>
+</footer>
 </body>
 </html>
